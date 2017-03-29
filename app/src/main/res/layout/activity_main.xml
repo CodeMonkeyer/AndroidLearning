@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:text="Start Animation"
+        />
+
+    <com.ubt.androidlearning.Drawable.SkippedView
+        android:id="@+id/skipped_view"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        app:text="skip"
+        app:text_size="12sp"
+        />
+
+    <com.ubt.androidlearning.Drawable.IOSDownLoading
+        android:id="@+id/ios_downloading"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <FrameLayout
+        android:id="@+id/fl_blur"
+        android:layout_below="@+id/ios_downloading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_blur"
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:layout_marginBottom="20dp"
+            android:scaleType="fitXY"
+            />
+
+        <ImageView
+            android:id="@+id/iv_blur_res"
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/dayu"
+            android:layout_marginBottom="20dp"
+            />
+
+
+    </FrameLayout>
+
+
+
+    <SeekBar
+        android:id="@+id/seek_blur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fl_blur"/>
+</RelativeLayout>

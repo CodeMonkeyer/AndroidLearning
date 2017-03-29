@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    
+    <declare-styleable name="SkippedView">
+        
+        <attr name="background_color" format="color"/>
+        <attr name="broader_color" format="color"/>
+        <attr name="broader_width" format="dimension"/>
+        <attr name="text" format="string"/>
+        <attr name="text_size" format="dimension"/>
+        <attr name="text_color" format="color"/>
+
+    </declare-styleable>
+    
+    <declare-styleable name="SlidingLayout">
+        <attr name="background_view" format="reference"/>
+
+        <attr name="sliding_mode" format="enum">
+
+            <enum name="both" value="0"/>
+            <enum name="top" value="1"/>
+            <enum name="bottom" value="2"/>
+
+        </attr>
+        
+        <attr name="sliding_pointer_mode" format="enum">
+
+            <enum name="one" value="0"/>
+            <enum name="more" value="1"/>
+
+        </attr>
+        
+        <attr name="sliding_margin" format="dimension"/>
+
+
+    </declare-styleable>
+
+</resources>

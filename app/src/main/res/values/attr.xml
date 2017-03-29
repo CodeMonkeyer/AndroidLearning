@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="BaseRecyclerView">
+        <attr name="rcy_orientation" format="enum">
+            <enum name="vertical" value="1"/>
+            <enum name="horizontal" value="0"/>
+        </attr>
+
+        <attr name="rcy_layout" format="enum">
+            <enum name="linear" value="0"/>
+            <enum name="grid" value="1"/>
+            <enum name="stagger" value="2"/>
+        </attr>
+
+        <attr name="rcy_span" format="integer"/>
+        <attr name="rcy_center" format="boolean"/>
+
+
+    </declare-styleable>
+
+    
+    <declare-styleable name="ShapedImageView">
+        
+        <attr name="borderRadius" format="dimension"/>
+        <attr name="shape">
+
+            <enum name="round" value="0"/>
+            <enum name="rect" value="1"/>
+
+        </attr>
+        
+    </declare-styleable>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_scroll_intercept"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ubt.androidlearning.ScrollInterceptActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <com.ubt.androidlearning.Drawable.BaseRecyclerView
+        android:id="@+id/ryc_1"
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        app:rcy_layout="linear"
+        app:rcy_orientation="vertical"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/colorPrimaryDark"
+        />
+
+    <com.ubt.androidlearning.Drawable.BaseRecyclerView
+        android:id="@+id/ryc_2"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        app:rcy_layout="linear"
+        app:rcy_orientation="vertical"
+
+        />
+
+</LinearLayout>
+
+
+
+
+
+</ScrollView>
